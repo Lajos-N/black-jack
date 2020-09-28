@@ -1,0 +1,7 @@
+A Black Jack játékszabájai: https://hu.wikipedia.org/wiki/Huszonegy
+UTF-8 karakter  tábla tartalmazza a kárgyalapokat?
+
+
+Több játékos mód. (megadható, hogy hány játékos játsza a játékot)
+Csalás beépítése =)
+
