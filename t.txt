@@ -1,4 +1,7 @@
 pakli = tartalamazza mind az 52 lapot
+jatékos = 0
+gép = 0
+
 
 véletlenszerü függvény:
     kiválaszt a pakliból egy lapot és átadja (játék menete)
@@ -15,7 +18,15 @@ játék menete:
     
 kiíratás (játékos és gép lapjainak összege)    
 
-ha ( játékos lapok értéke kissebb mint 21 ? )
-    ciklus (lapkérés)                                                   # játékos dönt kér még lapot I/N
-        (véletlenszerü függvény) kiválaszt egy lapot                    # a lap eltávolítása a pakkliból
-    
+
+ciklus ha jatékos <= jatékos lapjainak összege (lapkérés):	           # játékos dönt kér még lapot I/N
+	ha 'kér még lapot?' = I
+		(véletlenszerü függvény) kiválaszt egy lapot         	        # a lap eltávolítása a pakkliból
+		jatékos = jatékos + véletlenszerü függvény
+	egyébként
+		megszakítás	
+
+############# hiányzik még a gép lapkérése ##################
+
+függvény (ki nyert):
+	
