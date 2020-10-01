@@ -1,0 +1,21 @@
+pakli tartalamazza mind az 52 lapot
+
+véletlenszerü függvény:
+    kiválaszt a pakliból egy lapot és átadja
+
+
+játék menete:
+    játékos kap egy lapot a (véletlenszerü függvénytől)     # a lap eltávolítása a pakkliból
+    gép kap egy lapot a (véletlenszerü függvénytől)     # a lap eltávolítása a pakkliból
+    játékos kap még egy lapot a (véletlenszerü függvénytől)     # a lap eltávolítása a pakkliból
+    gép kap még egy lapot a (véletlenszerü függvénytől)     # a lap eltávolítása a pakkliból
+    játékos lapjainak összege
+    gép lapjainak összege
+
+    
+kiíratás (játékos és gép lapjainak összege)    
+
+iteráció ( játékos lapok értéke kissebb mint 21 ? )
+    ciklus (lapkérés) # játékos eldöntheti, hogy kér-e még lapot I/N
+        abban az esetben, ha kér, 
+    
