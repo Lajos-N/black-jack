@@ -30,3 +30,13 @@ ciklus ha jatékos <= jatékos lapjainak összege (lapkérés):	           # já
 
 függvény (ki nyert):
 	
+    ha jatékos > gép és <= 21:
+        kiír "játékos nyert"
+    vagyha játékos < gép és <= 21:
+        kiír "gép nyert"
+    egyébként:
+        kiír "döntetlen"
+
+
+
+        
