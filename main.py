@@ -14,6 +14,7 @@ pakli_lapjai = ['kör 2', 'kör 3', 'kör 4', 'kör 5', 'kör 6', 'kör 7', 'kö
 lap = 0
 jatekos = 0
 gep = 0 
+figurak = ["J", "Q", "K"]
 
 #   metodusok / függvények
 
@@ -21,6 +22,8 @@ gep = 0
 
 def lap_huzas(kihuzott_lap):
     lap = random.choice(pakli_lapjai)
+    i = random.choice(pakli_lapjai)
+    del pakli_lapjai[i]
     return lap
     
 
@@ -37,11 +40,21 @@ def jatek_menete():
     print("Gép    :", gep)
 
 
-jatek_menete()
+# def lap_erteke(jatekos):
+#     if jatekos[:-1] == figurak:   # ez in figurak     valami szerepel-e a figurák változóban? Értékként igaz / hamis-at ad vissza
+#         szamlalao = "igen"
+
+#     return szamlalao
 
 
 
-# print(lap_huzas(lap))
+
+jatek_menete() 
+# print(lap_erteke(szamlalo))
+
+
+
+
 
 
 
