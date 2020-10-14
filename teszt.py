@@ -13,11 +13,15 @@ def pakli_osszeall():
 
         
 
-def lap_huzas(p):
-    return random.choice(a)
+# def lap_huzas(p):
+#     return random.choice(a)
 
 
 pakli_osszeall()
-print(lap_huzas(a))
+# print(lap_huzas(a))
+
+print(len(a))
+print(a)
+
 
 
