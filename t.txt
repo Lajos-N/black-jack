@@ -1,13 +1,18 @@
+###     változok        ###
+
 pakli = tartalamazza mind az 52 lapot
 jatékos = 0
 gép = 0
 
 
-véletlenszerü függvény:
+###     függvények      ###
+
+
+véletlenszerü ():
     kiválaszt a pakliból egy lapot és átadja (játék menete)
 
 
-játék menete:
+játék menete ():
     játékos kap egy lapot a (véletlenszerü függvénytől)                 # a lap eltávolítása a pakkliból
     gép kap egy lapot a (véletlenszerü függvénytől)                     # a lap eltávolítása a pakkliból
     játékos kap még egy lapot a (véletlenszerü függvénytől)             # a lap eltávolítása a pakkliból
@@ -16,7 +21,8 @@ játék menete:
     return gép lapjainak összege
 
     
-kiíratás (játékos és gép lapjainak összege)    
+kiíratás():
+    játékos és gép lapjainak összege
 
 
 ciklus ha jatékos <= jatékos lapjainak összege (lapkérés):	           # játékos dönt kér még lapot I/N
@@ -41,5 +47,5 @@ függvény (ki nyert):
 
         
 akarsz új kört? ()
-    
+
 
