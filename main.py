@@ -9,11 +9,11 @@ pakli_lapjai = ['kör 2', 'kör 3', 'kör 4', 'kör 5', 'kör 6', 'kör 7', 'kö
 'treff 2', 'treff 3', 'treff 4', 'treff 5', 'treff 6', 'treff 7', 'treff 8', 'treff 9', 'treff 10', 'treff J', 'treff Q', 'treff K', 'treff A',
 'pikk 2', 'pikk 3', 'pikk 4', 'pikk 5', 'pikk 6', 'pikk 7', 'pikk 8', 'pikk 9', 'pikk 10', 'pikk J', 'pikk Q', 'pikk K', 'pikk A']
 
-pakli_szinei = ['kör', 'káró', 'treff', 'pikk']
-
+# pakli_szinei = ['kör', 'káró', 'treff', 'pikk']
 
 lap = 0
-
+jatekos = 0
+gep = 0 
 
 #   metodusok / függvények
 
@@ -26,7 +26,22 @@ def lap_huzas(kihuzott_lap):
 
 
 
-print(lap_huzas(lap))
+def jatek_menete():
+    jatekos = lap_huzas(lap) + " "
+    gep = lap_huzas(lap) + " "
+    jatekos += lap_huzas(lap)
+    gep += lap_huzas(lap)
+
+
+    print("Játékos:", jatekos)
+    print("Gép    :", gep)
+
+
+jatek_menete()
+
+
+
+# print(lap_huzas(lap))
 
 
 
