@@ -9,12 +9,10 @@ pakli_lapjai = ['kör 2', 'kör 3', 'kör 4', 'kör 5', 'kör 6', 'kör 7', 'kö
 'treff 2', 'treff 3', 'treff 4', 'treff 5', 'treff 6', 'treff 7', 'treff 8', 'treff 9', 'treff 10', 'treff j', 'treff q', 'treff k', 'treff a',
 'pikk 2', 'pikk 3', 'pikk 4', 'pikk 5', 'pikk 6', 'pikk 7', 'pikk 8', 'pikk 9', 'pikk 10', 'pikk j', 'pikk q', 'pikk k', 'pikk a']
 
-# pakli_szinei = ['kör', 'káró', 'treff', 'pikk']
 
 lap = 0
 jatekos = 0
 gep = 0 
-figurak = ["J", "Q", "K"]
 
 #   metodusok / függvények
 
@@ -62,13 +60,6 @@ jatek_menete()
 
 
 
-
-'''
-for j in pakli_szinei:			# nem tudom, hogy kell egy tömböt feltölteni egy ciklussal
-	for i in range(2, 11):
-		pass
-		
-'''
 
 
 
