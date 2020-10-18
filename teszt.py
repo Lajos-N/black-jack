@@ -21,7 +21,7 @@ pakli_osszeall()
 # print(lap_huzas(a))
 
 print(len(a))
-print(a)
+print(a[0])
 
 
 
