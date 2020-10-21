@@ -2,6 +2,9 @@ A Black Jack játékszabájai: https://hu.wikipedia.org/wiki/Huszonegy
 UTF-8 karakter  tábla tartalmazza a kárgyalapokat?
 
 
+Osztás: (fontos!!)
+Az osztó a játékosnak oszt egy lapot, a színével felfelé, majd egyet saját magának is, szintén a színével felfelé. Ezután ismét oszt a játékosnak egy újabb lapot a színével felfelé, valamint saját magának is, de ezt már színével lefelé. Ezt a lapot a játékos nem láthatja.
+
 Több játékos mód. (megadható, hogy hány játékos játsza a játékot)
 Csalás beépítése =)
 

@@ -1,8 +1,17 @@
 ###     változok        ###
 
 pakli = tartalamazza mind az 52 lapot
-jatékos = 0
-gép = 0
+pakli_szine = 
+pakli_szamok =
+klihuzott_lap =
+
+elsö_lap_jatékos =
+második_lap_jatékos =
+elsö_lap_gép
+második_lap_gép =
+
+jatékos_lapok_összege = 0
+gép_lapok_összege = 0
 
 
 ###     függvények      ###
@@ -10,6 +19,7 @@ gép = 0
 
 véletlenszerü ():
     kiválaszt a pakliból egy lapot és átadja (játék menete)
+	a paklibol törli a kivalasztott lapot
 
 
 játék menete ():
@@ -17,22 +27,22 @@ játék menete ():
     gép kap egy lapot a (véletlenszerü függvénytől)                     # a lap eltávolítása a pakkliból
     játékos kap még egy lapot a (véletlenszerü függvénytől)             # a lap eltávolítása a pakkliból
     gép kap még egy lapot a (véletlenszerü függvénytől)                 # a lap eltávolítása a pakkliból
-    return játékos lapjainak összege
-    return gép lapjainak összege
+    return játékos lapjai
+    return gép lapjai
 
-    
-kiíratás():
-    játékos és gép lapjainak összege
+lapkérése():
+	ciklus ameddig jatékos <= 21 (véletlenszerü):          			   # játékos dönt kér még lapot I/N
+		ha 'kér még lapot?' = I
+			(véletlenszerü függvény) kiválaszt egy lapot               # a lap eltávolítása a pakkliból
+			jatékos = jatékos + véletlenszerü függvény
+		egyébként
+			megszakítás	
 
-
-ciklus ha jatékos <= jatékos lapjainak összege (lapkérés):	           # játékos dönt kér még lapot I/N
-	ha 'kér még lapot?' = I
-		(véletlenszerü függvény) kiválaszt egy lapot         	        # a lap eltávolítása a pakkliból
-		jatékos = jatékos + véletlenszerü függvény
-	egyébként
-		megszakítás	
-
-############# hiányzik még a gép lapkérése ##################
+gép_lapkérése():    
+	ha jatékos nem kér lapot:
+		jatékos < gép
+			megszakítás
+	egyébként:
 
 függvény (ki nyert):
 	
@@ -43,9 +53,11 @@ függvény (ki nyert):
     egyébként:
         kiír "döntetlen"
 
+############# hiányzik még a gép lapkérése ##################
 
 
-        
-akarsz új kört? ()
+
+
+
 
 
