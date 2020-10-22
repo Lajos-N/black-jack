@@ -48,12 +48,12 @@ def pakli_tesztelö_ciklus():
 
 
 def gep_lapot_ker(lap):
-	if gep_lapok_osszege < 17 or gep_lapok_osszege < jatekos_lapok_osszege:
-		pass
-	elif
-		pass
-	else:
-		pass
+	if gep_lapok_osszege < 16:
+		pass # a gép kap még egy lapot
+	
+	else: 
+		pass # a gép már nem kap több lapot
+	
 
 
 
