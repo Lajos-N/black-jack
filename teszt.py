@@ -46,7 +46,7 @@ def pakli_tesztelö_ciklus():
 		pakli.remove(lap_huzas(pakli))
 		print(len(pakli))
 
-
+#							a gép lapot kér függvény (még nincs befejezve!!!)
 def gep_lapot_ker(lap):
 	if gep_lapok_osszege < 16:
 		pass # a gép kap még egy lapot
@@ -54,6 +54,8 @@ def gep_lapot_ker(lap):
 	else: 
 		pass # a gép már nem kap több lapot
 	
+def eredmeny_szamlalo():
+	pass
 
 
 
