@@ -4,9 +4,9 @@ import random
 
 #   globális változók
 
-a = []
-b = ['kör', 'káró', 'treff', 'pikk']
-c = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+pakli = []
+pakli_szin = ['kör', 'káró', 'treff', 'pikk']
+pakli_szam = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 
 lap = 0
 index = None
@@ -15,36 +15,32 @@ index = None
 #   függvények / metodusok
 
 def pakli_osszeall():
-    for szin in b:
-        for szam in c:     
+    for szin in pakli_szin:
+        for szam in pakli_szam:     
             kozos = szin, szam
-            a.append(kozos)
+            pakli.append(kozos)
 
 def lap_huzas(kihuzott_lap):
-    lap = random.choice(a)
+    lap = random.choice(pakli)
     print(lap)
     return lap
-        
-# def kihuzott_lap_indexe(lap):
-#     index = a.index(lap)
-#     return index
 
-# print(kihuzott_lap_indexe(lap))
 
 pakli_osszeall()
 
 
-for i in range(len(a)-1):
-    a.remove(lap_huzas(a))
-    print(len(a))
-    # if len(a) <= 0:
-    #     break
+for i in range(len(pakli)-1):
+    pakli.remove(lap_huzas(pakli))
+    print(len(pakli))
+
+
+#	föprogram
 
 # pakli lapjainak számolása
-print(len(a))
+print(len(pakli))
 print(lap_huzas(lap))
 
-# print(lap)
+
 
 
 
