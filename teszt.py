@@ -10,6 +10,15 @@ pakli_szam = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
 
 lap = 0
 
+elso_lap_jatekos = 0
+masodik_lap_jatekos = 0
+elso_lap_gep = 0
+masodik_lap_gep = 0
+
+jatekos_lapok_osszege = 0
+gep_lapok_osszege = 0
+
+
 
 
 #   függvények / metodusok
@@ -36,6 +45,16 @@ def pakli_tesztelö_ciklus():
 	for i in range(len(pakli)-1):
 		pakli.remove(lap_huzas(pakli))
 		print(len(pakli))
+
+
+def gep_lapot_ker(lap):
+	if gep_lapok_osszege < 17 or gep_lapok_osszege < jatekos_lapok_osszege:
+		pass
+	elif
+		pass
+	else:
+		pass
+
 
 
 pakli_osszeall()
