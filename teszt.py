@@ -4,8 +4,6 @@ import random
 
 #   globális változók
 
-#pakli = []
-#pakli_szin = ['kör', 'káró', 'treff', 'pikk']
 pakli = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'] * 4
 pakli_figuras_lapok = ['J', 'Q', 'K']
 
@@ -18,21 +16,15 @@ masodik_lap_gep = 0
 
 jatekos_lapok_osszege_1 = 0
 jatekos_lapok_osszege_2 = 0
-x = None
+
 gep_lapok_osszege_1 = 0
 gep_lapok_osszege_2 = 0
 
-
+jatekos_vegeredmeny = 0
+gep_vegeredmeny = 0
 
 
 #   függvények / metodusok
-
-# összeállítja a paklit
-#def pakli_osszeall():
-#    for szin in pakli_szin:
-#        for szam in pakli_szam:     
-#            kozos = szin, szam
-#            pakli.append(kozos)
 
 # a pakliból kihúz egy lapot amit átad a lap változónak
 def lap_huzas(kihuzott_lap):
@@ -82,6 +74,7 @@ def jatek(lap):
 
 
 # a figurás lapokat értékkel látja el (jákékos)
+
 def eredmeny_szamlalo_jatekos():
 	
 	if elso_lap_jatekos in pakli_figuras_lapok:
@@ -109,8 +102,13 @@ def eredmeny_szamlalo_jatekos():
 		jatekos_lapok_osszege_2 = masodik_lap_jatekos
 		print('játékos második változó', jatekos_lapok_osszege_2)
 
+	jatekos_vegeredmeny = jatekos_lapok_osszege_1 + jatekos_lapok_osszege_2
+	print('játékos végeredmény', jatekos_vegeredmeny)
+
+
 
 # a figurás lapokat értékkel látja el (gép)
+
 def eredmeny_szamlalo_gep():
 	
 	if elso_lap_gep in pakli_figuras_lapok:
@@ -140,11 +138,14 @@ def eredmeny_szamlalo_gep():
 		print('gép masodik változó', gep_lapok_osszege_2)
 		
 
+	gep_vegeredmeny = gep_lapok_osszege_1 + gep_lapok_osszege_2
+	print('gép végeredmény', gep_vegeredmeny)
+	
+
 
 
 
 #	föprogram
-
 
 elso_lap_jatekos = lap_huzas(lap)
 print(elso_lap_jatekos)
