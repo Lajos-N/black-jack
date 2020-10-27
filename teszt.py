@@ -16,9 +16,11 @@ masodik_lap_jatekos = 0
 elso_lap_gep = 0
 masodik_lap_gep = 0
 
-jatekos_lapok_osszege = 0
+jatekos_lapok_osszege_1 = 0
+jatekos_lapok_osszege_2 = 0
 x = None
-gep_lapok_osszege = 0
+gep_lapok_osszege_1 = 0
+gep_lapok_osszege_2 = 0
 
 
 
@@ -78,21 +80,30 @@ def jatek(lap):
 #		pass # a gép már nem kap több lapot
 #	
 
-def eredmeny_szamlalo():
+
+# a figurás lapokat értékkel látja el (jákékos)
+def eredmeny_szamlalo_jatekos():
 	
 	if elso_lap_jatekos in pakli_figuras_lapok:
-		jatekos_lapok_osszege = 10
-		print(jatekos_lapok_osszege)
-	else:
-		print("semmi")
+		jatekos_lapok_osszege_1 = 10
+		print('jatékos elsö változó', jatekos_lapok_osszege_1)
+	
+	if masodik_lap_jatekos in pakli_figuras_lapok:
+		jatekos_lapok_osszege_2 = 10
+		print('játékos második változó', jatekos_lapok_osszege_2)
 
-
+# a figurás lapokat értékkel látja el (gép)
+def eredmeny_szamlalo_gep():
+	
+	if elso_lap_gep in pakli_figuras_lapok:
+		gep_lapok_osszege_1 = 10
+		print('gép elsö változó', gep_lapok_osszege_1)
+	
+	if masodik_lap_gep in pakli_figuras_lapok:
+		gep_lapok_osszege_2 = 10
+		print('gép második változó', gep_lapok_osszege_2)
 	
 		
-	#jatekos_lapok_osszege = int(elso_lap_jatekos) + int(masodik_lap_jatekos)
-	# print(jatekos_lapok_osszege)
-	# gep_lapok_osszege = int(elso_lap_gep) + int(masodik_lap_gep)
-	# print(gep_lapok_osszege)
 
 
 
@@ -112,7 +123,8 @@ print(masodik_lap_jatekos)
 masodik_lap_gep = lap_huzas(lap)
 print(masodik_lap_gep)
 
-eredmeny_szamlalo()
+eredmeny_szamlalo_jatekos()
+eredmeny_szamlalo_gep()
 
 
 
