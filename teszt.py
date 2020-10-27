@@ -6,7 +6,8 @@ import random
 
 #pakli = []
 #pakli_szin = ['kör', 'káró', 'treff', 'pikk']
-pakli = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'] * 4
+pakli = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'] * 4
+pakli_figuras_lapok = ['J', 'Q', 'K']
 
 lap = None
 
@@ -16,6 +17,7 @@ elso_lap_gep = 0
 masodik_lap_gep = 0
 
 jatekos_lapok_osszege = 0
+x = None
 gep_lapok_osszege = 0
 
 
@@ -75,14 +77,22 @@ def jatek(lap):
 #	else: 
 #		pass # a gép már nem kap több lapot
 #	
+
 def eredmeny_szamlalo():
-	if elso_lap_jatekos == 'J' or 'Q' or 'K':
+	
+	if elso_lap_jatekos in pakli_figuras_lapok:
 		jatekos_lapok_osszege = 10
+		print(jatekos_lapok_osszege)
+	else:
+		print("semmi")
+
+
+	
 		
 	#jatekos_lapok_osszege = int(elso_lap_jatekos) + int(masodik_lap_jatekos)
-	print(jatekos_lapok_osszege)
-	gep_lapok_osszege = int(elso_lap_gep) + int(masodik_lap_gep)
-	print(gep_lapok_osszege)
+	# print(jatekos_lapok_osszege)
+	# gep_lapok_osszege = int(elso_lap_gep) + int(masodik_lap_gep)
+	# print(gep_lapok_osszege)
 
 
 
