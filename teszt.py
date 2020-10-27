@@ -87,10 +87,28 @@ def eredmeny_szamlalo_jatekos():
 	if elso_lap_jatekos in pakli_figuras_lapok:
 		jatekos_lapok_osszege_1 = 10
 		print('jatékos elsö változó', jatekos_lapok_osszege_1)
+		
+	elif elso_lap_jatekos == 'A':
+		jatekos_lapok_osszege_1 = 11
+		print('jatékos elsö változó', jatekos_lapok_osszege_1)
+		
+	else:
+		jatekos_lapok_osszege_1 = elso_lap_jatekos
+		print('jatékos elsö változó', jatekos_lapok_osszege_1)
+		
 	
 	if masodik_lap_jatekos in pakli_figuras_lapok:
 		jatekos_lapok_osszege_2 = 10
 		print('játékos második változó', jatekos_lapok_osszege_2)
+
+	elif masodik_lap_jatekos == 'A':
+		jatekos_lapok_osszege_2 = 11
+		print('jatékos masodik változó', jatekos_lapok_osszege_2)
+	
+	else:
+		jatekos_lapok_osszege_2 = masodik_lap_jatekos
+		print('játékos második változó', jatekos_lapok_osszege_2)
+
 
 # a figurás lapokat értékkel látja el (gép)
 def eredmeny_szamlalo_gep():
@@ -99,10 +117,27 @@ def eredmeny_szamlalo_gep():
 		gep_lapok_osszege_1 = 10
 		print('gép elsö változó', gep_lapok_osszege_1)
 	
+	elif elso_lap_gep == 'A':
+		gep_lapok_osszege_1 = 11
+		print('jatékos elsö változó', gep_lapok_osszege_1)
+
+	else:
+		gep_lapok_osszege_1 = elso_lap_gep
+		print('gép elsö változó', gep_lapok_osszege_1)
+		
+	
 	if masodik_lap_gep in pakli_figuras_lapok:
 		gep_lapok_osszege_2 = 10
 		print('gép második változó', gep_lapok_osszege_2)
+
+	elif masodik_lap_gep == 'A':
+		gep_lapok_osszege_2 = 11
+		print('jatékos masodik változó', gep_lapok_osszege_2)
+
 	
+	else:
+		gep_lapok_osszege_2 = masodik_lap_gep
+		print('gép masodik változó', gep_lapok_osszege_2)
 		
 
 
