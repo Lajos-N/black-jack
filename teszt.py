@@ -11,17 +11,22 @@ lap = None
 
 elso_lap_jatekos = 0
 masodik_lap_jatekos = 0
+haramdik_lap_jatekos = 0
 elso_lap_gep = 0
 masodik_lap_gep = 0
+harmadik_lap_gep = 0
 
 jatekos_lapok_osszege_1 = 0
 jatekos_lapok_osszege_2 = 0
+jatekos_lapok_osszege_3 = 0
 
 gep_lapok_osszege_1 = 0
 gep_lapok_osszege_2 = 0
+gep_lapok_osszege_3 = 0
 
 jatekos_vegeredmeny = 0
 gep_vegeredmeny = 0
+
 
 
 #   függvények / metodusok
@@ -52,10 +57,7 @@ def pakli_tesztelö_ciklus():
 		print(pakli)
 '''
 
-def jatek(lap):
-	print('ez az elsö valtozo')
-	elso_lap_jatekos = lap
-	print(elso_lap_jatekos)
+
 	
 	
 
@@ -142,7 +144,14 @@ def eredmeny_szamlalo_gep():
 	print('gép végeredmény', gep_vegeredmeny)
 	
 
-
+def lap_keres():
+	while True:
+		i = input('Kérsz még lapot? (i/n)')
+		if i == 'n':			
+			break
+		haramdik_lap_jatekos = lap_huzas(lap)
+		print('jatékos harmadik lap: ', haramdik_lap_jatekos)
+		
 
 
 #	föprogram
@@ -162,6 +171,7 @@ print(masodik_lap_gep)
 eredmeny_szamlalo_jatekos()
 eredmeny_szamlalo_gep()
 
+lap_keres()
 
 
 
