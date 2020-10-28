@@ -119,7 +119,7 @@ def eredmeny_szamlalo_gep():
 	
 	elif elso_lap_gep == 'A':
 		gep_lapok_osszege_1 = 11
-		print('jatékos elsö változó', gep_lapok_osszege_1)
+		print('gép elsö változó', gep_lapok_osszege_1)
 
 	else:
 		gep_lapok_osszege_1 = elso_lap_gep
@@ -132,7 +132,7 @@ def eredmeny_szamlalo_gep():
 
 	elif masodik_lap_gep == 'A':
 		gep_lapok_osszege_2 = 11
-		print('jatékos masodik változó', gep_lapok_osszege_2)
+		print('gép masodik változó', gep_lapok_osszege_2)
 
 	
 	else:
