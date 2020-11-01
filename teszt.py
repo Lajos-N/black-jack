@@ -8,6 +8,7 @@ pakli = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'] * 4
 pakli_figuras_lapok = ['J', 'Q', 'K']
 
 lap = None
+jatekos_valasza = 0
 
 elso_lap_jatekos = 0
 masodik_lap_jatekos = 0
@@ -144,13 +145,22 @@ def eredmeny_szamlalo_gep():
 	print('gép végeredmény', gep_vegeredmeny)
 	
 
-def lap_keres():
-	while True:
+def lap_keres(jatekos_valasza):
+	for i in range(2):
 		i = input('Kérsz még lapot? (i/n)')
+		jatekos_valasza = i
 		if i == 'n':			
-			break
-		haramdik_lap_jatekos = lap_huzas(lap)
-		print('jatékos harmadik lap: ', haramdik_lap_jatekos)
+			return jatekos_valasza
+			# break
+		
+		else:
+			haramdik_lap_jatekos = lap_huzas(lap)
+			print('jatékos harmadik lap: ', haramdik_lap_jatekos)
+
+
+def gep_lapkeres(jatekos_valasza):
+	if jatekos_valasza == 'n':
+		print('es mukodik')
 		
 
 
@@ -171,7 +181,10 @@ print(masodik_lap_gep)
 eredmeny_szamlalo_jatekos()
 eredmeny_szamlalo_gep()
 
-lap_keres()
+lap_keres(jatekos_valasza)
+print(lap_keres(jatekos_valasza))
+print(gep_lapkeres(jatekos_valasza))
+# print(gep_lapkeres(jatekos_valasza))
 
 
 

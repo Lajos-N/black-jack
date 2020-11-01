@@ -15,6 +15,5 @@ http://programarcadegames.com/index.php?lang=hu&chapter=functions
 
 
 FONTOS!:
-	az összeállított pakli rendes (tisztított) kiíratása, hogy ne legyen benne csak a lapok színe és száma.
-
+	
 
